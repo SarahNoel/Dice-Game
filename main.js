@@ -1,4 +1,4 @@
-console.log("Welcome to the Daring Dice Game!");
+console.log("Welcome to CeLoo!");
 var die = 0;
 
 var player1 = [], computer = [];
@@ -12,6 +12,9 @@ function roll(player){
 roll(computer);
 roll(player1);
 
+// player1 = [4,5,6];
+// computer = [6,6,6];
+
 console.log("The computer rolled " +computer);
 console.log("You rolled "+ player1);
 
@@ -23,11 +26,13 @@ function sum(array) {
   return count;
 }
 
+
+
 function winstraight(array) {
 for (var i = 0; i < array.length; i++) {
   if (array[0] === 4 || array[1] === 4 || array[2] === 4 ){
     if(array[0] === 5 || array[1] === 5 || array[2] === 5 ){
-      if(array[0] === 4 || array[1] === 4 || array[2] === 4 ){
+      if(array[0] === 6 || array[1] === 6 || array[2] === 6 ){
         return true;
       }
     }
@@ -37,9 +42,9 @@ for (var i = 0; i < array.length; i++) {
 
 function losestraight(array) {
 for (var i = 0; i < array.length; i++) {
-  if (array[0] === 4 || array[1] === 4 || array[2] === 4 ){
-    if(array[0] === 5 || array[1] === 5 || array[2] === 5 ){
-      if(array[0] === 4 || array[1] === 4 || array[2] === 4 ){
+  if (array[0] === 1 || array[1] === 1 || array[2] === 1 ){
+    if(array[0] === 2 || array[1] === 2 || array[2] === 2 ){
+      if(array[0] === 3 || array[1] === 3 || array[2] === 3 ){
         return true;
       }
     }
