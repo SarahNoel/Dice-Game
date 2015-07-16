@@ -1,6 +1,6 @@
-console.log("Welcome to CeLoo!");
-var die = 0;
+console.log("Welcome to the Daring Dice Game!");
 
+var die = 0;
 var player1 = [], computer = [];
 
 function roll(player){
@@ -12,8 +12,8 @@ function roll(player){
 roll(computer);
 roll(player1);
 
-// player1 = [4,5,6];
-// computer = [6,6,6];
+// player1 = [1,1,1];
+// computer = [1,2,3];
 
 console.log("The computer rolled " +computer);
 console.log("You rolled "+ player1);
